@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>animation</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+       <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("div").animate({left: '1330px'},"slow");
+                $("div").slideToggle("slow");
+            });
+        });
+       </script>
+    </head>
+    <body>
+        <button id="btn">Animate</button><hr><br>
+        <div style="background-color: purple;width: 200px;height: 200px;position: absolute;"></div><br><br><br><br><br><br><br><br><br><br><br><hr>
+        <div style="background-color: purple;width: 200px;height: 200px;position: absolute;"></div><br><br><br><br><br><br><br><br><br><br><br><hr>
+        <div style="background-color: purple;width: 200px;height: 200px;position: absolute;"></div>
+    </body>
+</html> 

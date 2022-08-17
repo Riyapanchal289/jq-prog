@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+</script>
+<script>
+  $(document).ready(function(){
+  $("#TxtTypeFocus").focus(function(){
+    $(this).css("background-color", "yellow");
+  })
+  });
+  $(document).ready(function(){
+  $("#TxtTypeBlur").blur(function(){
+    $(this).css("background-color", "green");
+  })
+  });
+  $(document).ready(function(){
+  $("#TxtTypeKeypress").keypress(function(){
+    $(this).css("background-color", "green");
+  })
+  });
+  $(document).ready(function(){
+  $("#TxtTypeKeyup").keyup(function(){
+    $(this).css("background-color", "green");
+  })
+  });
+</script>
+</head>
+<body>
+    <input type="text" id="TxtTypeFocus" placeholder="Check the text is focus"><hr>
+    <input type="text" id="TxtTypeBlur" placeholder="Check the text is Blur"><hr>
+    <input type="text" id="TxtTypeKeypress" placeholder="Check the text is Key Press"><hr>
+    <input type="text" id="TxtTypeKeyup" placeholder="Check the text is Key up"><hr>
+</body>
+</html>

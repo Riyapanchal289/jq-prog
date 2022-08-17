@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>hide second example</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+       <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide();
+            });
+            $("#show").click(function(){
+                $("p").show();
+            });
+        
+        });
+       </script>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at facere non.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus quidem voluptatem illo.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo distinctio dolorem voluptatum!</p>
+
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+
+    </body>
+</html>

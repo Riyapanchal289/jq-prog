@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>fadeout</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+       <script>
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    $("#div1").fadeOut();
+                    $("#div2").fadeOut("slow");
+                    $("#div3").fadeOut(2000);   
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <button id="btn">fade out</button><br><br><hr>
+        <div id="div1" style="background-color: purple; width: 200px;height: 200px;"></div><br><hr>
+        <div id="div2" style="background-color: purple; width: 200px;height: 200px;"></div><br><hr>
+        <div id="div3" style="background-color: purple; width: 200px;height: 200px;"></div><br><hr>
+    </body>
+</html>
